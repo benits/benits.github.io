@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/mab-favicon.png">
+  <title>
+    MAB• Desenvolvedor de Sistemas
+  </title>
+  <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+    </script>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  
+  <link href="assets/css/style.default.css" rel="stylesheet" />
+  <link href="assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+  
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+  <link href="/assets/vendor/nucleo/css/nucleo-icons.css" rel="stylesheet">
+  <!-- custom scrollbar stylesheet -->
+  <link rel="stylesheet" href="assets\malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+
+<body class="profile-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="index.html" rel="tooltip" data-placement="bottom">
+          <span>MAB•</span> Desenvolvedor Full Stack
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+                MAB•
+              </a>
+            </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="https://www.devjedi.com.br/" class="nav-link" target="_blank">
+                  Blog
+                </a>
+            </li>
+            <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Meu Whatsapp" data-placement="bottom" href="https://api.whatsapp.com/send?phone=5567999694191&text=Ol%C3%A1%20Matheus%20Benites%2C%20encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fbenits.github.io%2F.%20Vamos%20Conversar.%20" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Me Chame no Whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              <p class="d-lg-none d-xl-none">Whatsapp</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Meu Facebook" data-placement="bottom" href="https://www.facebook.com/mabfullstack" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Conecte no meu Linkedin" data-placement="bottom" href="https://www.linkedin.com/in/benites-amorim/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <p class="d-lg-none d-xl-none">Linkedin</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Me Siga no GitHub" data-placement="bottom" href="https://github.com/benits" target="_blank">
+              <i class="fab fa-github"></i>
+              <p class="d-lg-none d-xl-none">GitHub</p>
+              <p>GitHub Pessoal</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Me Siga no GitHub" data-placement="bottom" href="https://github.com/deevjedi" target="_blank">
+              <i class="fab fa-github"></i>
+              <p class="d-lg-none d-xl-none">GitHub</p>
+              <p>GitHub Blog</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header">
+      <img src="assets/img/dots.png" class="dots">
+      <img src="assets/img/path4.png" class="path">
+      <div class="container align-items-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="profile-title text-left">Matheus Benites</h1>
+            <h5 class="text-on-back">DEV</h5>
+            <p class="profile-description">Sou Desenvolvedor Fullstack, entusiasta, apaixonado por tecnologia, com experiência no desenvolvimento de aplicações Web e Mobile.
+              Atualmente sou Programador em uma importante empresa de elétrica e automação, desenvolvendo aplicações para o monitoramento de dados e automação para grandes indústrias, com experiência também em programação de CLP´s.
+            </br></br>
+            Sou Criador do blog <a href="https://www.devjedi.com.br/" target="_blank">DevJedi</a> um portal de conteudo sobre o mundo da programação, desde 
+            programação na automação industrial até desenvolvimento de aplicativos mobile e websites.</br></br>
+            Um local para se compartilhar conhecimento de aluno para aluno, onde escrevo dica, tutoriais, noticias, artigos sobre programação.
+            </br></br>
+              Meta: Participar de um projeto que inove o mundo!
+              </br></br>
+              Resido em Dourados, MS com total disponibilidade para mudanças nacionais e internacionais.
+              
+            </p>
+            <div class="btn-wrapper profile pt-3">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5567999694191&text=Ol%C3%A1%20Matheus%20Benites%2C%20encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fbenits.github.io%2F.%20Vamos%20Conversar.%20" class="btn btn-icon btn-whatsapp btn-round" data-toggle="tooltip"  data-original-title="Me Chame no Whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              <a target="_blank" href="https://github.com/benits" class="btn btn-icon btn-twitter btn-round" data-toggle="tooltip" data-original-title="GitHub Pessoal">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://github.com/deevjedi" class="btn btn-icon btn-twitter btn-round" data-toggle="tooltip" data-original-title="GitHub Blog">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/benites-amorim/" class="btn btn-icon btn-facebook btn-round" data-toggle="tooltip" data-original-title="Conecte ao meu Linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a target="_blank" href="https://www.devjedi.com.br" class="btn btn-icon btn-dribbble  btn-round" data-toggle="tooltip" data-original-title="Meu Blog DevJedi">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img src="assets/img/mab.jpg" class="img-center img-fluid rounded-circle">
+                <h4 class="title">Desenvolvedor Full Stack</h4>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-tabs-primary justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#linka">
+                      Habilidades
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#linkb">
+                      Carácteristicas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#linkc">
+                      Formação
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content tab-subcategories">
+                  <div class="tab-pane active" id="linka" >
+                      <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                          <li class="nav-item" style="margin-left: 9%;">
+                              <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist" aria-expanded="true">
+                                  Back-end
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#link2" role="tablist" aria-expanded="false">
+                                  Front-end
+                              </a>
+                          </li>
+                      </ul>
+                      <div class="tab-content tab-space">
+                          <div class="tab-pane active" id="link1" aria-expanded="true">
+                                  <table class="table tablesorter" data-mcs-theme="dark"  id="content-1" style="display:inline-block; max-height: 250px; max-width: 100%; overflow: auto;">
+                                    <thead class=" text-light">
+                                      <tr>
+                                        <th class="header">
+                                          Linguagem
+                                        </th>
+                                        <th class="header" style="text-align:center;width: 100%;">
+                                          Experiência
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <div class="tab-scroll">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          Java
+                                        </td>
+                                        <td style="text-align:center;">
+                                          <div class="progress-container progress-primary">
+                                            <span class="progress-badge" style="font-size:10px;">1 - 3 Anos</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="75% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                                </div>
+                                          </div>
+                                        </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          PHP
+                                        </td>
+                                        <td style="text-align:center;">
+                                          <div class="progress-container progress-primary">
+                                            <span class="progress-badge" style="font-size:10px;">0 - 1 Anos</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="70% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                </div>
+                                          </div>
+                                        </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Ladder
+                                        </td>
+                                        <td style="text-align:center;">
+                                          <div class="progress-container progress-primary">
+                                            <span class="progress-badge" style="font-size:10px;">1 - 3 Anos</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="100% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                </div>
+                                          </div>
+                                        </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </div>
+                                  </table>
+                                </div>
+                          <div class="tab-pane" id="link2" aria-expanded="false">
+                              <table class="table tablesorter" data-mcs-theme="dark"  id="content" style="display:inline-block; max-height: 250px; max-width: 100%; overflow: auto;">
+                                  <thead class="text-light">
+                                    <tr>
+                                      <th class="header">
+                                        Linguagem
+                                      </th>
+                                      <th class="header" style="text-align:center;width: 100%;">
+                                        Experiência
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        HTML5
+                                      </td>
+                                      <td style="text-align:center;">
+                                        <div class="progress-container progress-primary">
+                                          <span class="progress-badge" style="font-size:10px;">1 - 3 Anos</span>
+                                          <div class="progress">
+                                              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" data-toggle="tooltip" data-original-title="90% do Conhecimento" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                              </div>
+                                        </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        CSS3
+                                      </td>
+                                      <td style="text-align:center;">
+                                        <div class="progress-container progress-primary">
+                                          <span class="progress-badge" style="font-size:10px;">0 - 1 Anos</span>
+                                          <div class="progress">
+                                              <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="90% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                              </div>
+                                        </div>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          JavaScript
+                                        </td>
+                                        <td style="text-align:center;">
+                                          <div class="progress-container progress-primary">
+                                            <span class="progress-badge" style="font-size:10px;">0 - 1 Anos</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="65% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                                </div>
+                                          </div>
+                                        </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            XML
+                                          </td>
+                                          <td style="text-align:center;">
+                                            <div class="progress-container progress-primary">
+                                              <span class="progress-badge" style="font-size:10px;">1 - 3 Anos</span>
+                                              <div class="progress">
+                                                  <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="90% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                  </div>
+                                            </div>
+                                          </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            Bootstrap 4
+                                          </td>
+                                          <td style="text-align:center;">
+                                            <div class="progress-container progress-primary">
+                                              <span class="progress-badge" style="font-size:10px;">0 - 1 Anos</span>
+                                              <div class="progress">
+                                                  <div class="progress-bar progress-bar-warning" role="progressbar" data-toggle="tooltip" data-original-title="60% do Conhecimento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                  </div>
+                                            </div>
+                                          </div>
+                                          </td>
+                                        </tr>
+                                  </tbody>
+                                </div>
+                                </table>
+                              </div>                          
+                          </div>
+                      </div>
+                  
+              
+                  <div class="tab-pane" id="linkb">
+                    <div class="row">
+                            <table class="table tablesorter " id="plain-table">
+                              <thead class=" text-primary">
+                              </thead>
+                              <div class="tab-scroll">
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center;">
+                                    Empreendedor
+                                  </td>
+                                </tr>
+                                  <td style="text-align:center;">
+                                    Pró-ativo
+                                  </td>
+                                </tr>
+                                  <td style="text-align:center;">
+                                    Empenhado
+                                  </td>
+                                </tr>
+                                  <td style="text-align:center;">
+                                    Autodidata
+                                  </td>
+                                </tr>
+                                  <td style="text-align:center;">
+                                    Lider
+                                  </td>
+                                </tr>
+                                  <td style="text-align:center;">
+                                    Ambicioso
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </div>
+                       </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="linkc">
+                      <div class="table-responsive">
+                          <table class="table tablesorter " id="plain-table">
+                            <thead class=" text-primary">
+                              <tr>
+                                <th class="header">
+                                  Curso
+                                </th>
+                                <th class="header" style="text-align:center;">
+                                  Status
+                                </th>
+                                <th class="header" style="text-align:center;">
+                                  Local
+                                </th>
+                              </tr>
+                            </thead>
+                            <div class="tab-scroll">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Eng. de Software
+                                </td>
+                                <td style="text-align:center;">
+                                  <div class="progress-container progress-primary">
+                                    <span class="progress-badge"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning" data-toggle="tooltip" data-original-title="2º Semestre" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                </td>
+                                <td>
+                                  <a href="https://www.unigran.br/">Unigran</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </div>
+                          </table>
+                        </div>
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------->
+    <div class="section">
+      
+        <div class="container">
+            <div class="col-lg-6 col-md-6" style="margin-left:0px;">
+                <h1 class="profile-title text-left">O QUE EU FAÇO</h1>
+                <h5 class="text-on-back"><i class="tim-icons icon-minimal-left"></i><a>/</a><i class="tim-icons icon-minimal-right"></i></h5>
+              </div>
+          <div class="row justify-content-between">
+                      <div class="container clearfix">
+                        <div class="row services">
+                          <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                    <div class="card-body">
+                                    <div class="box box-services">
+                                      <div class="icon"><img src="assets/img/data.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
+                                      <h4 class="heading" style="margin-top: 15px;">UX &amp; UI -  Interface de Usuário</h4>
+                                      <p>Criação e prototipagem de interface para sites e aplicativos mobile</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                  </div>
+                              <div class="col-sm-4">
+                                  <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                      <div class="card-body">
+                                <div class="box box-services">
+                                    <div class="icon"><img src="assets/img/code-web.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
+                                  <h4 class="heading" style="margin-top: 15px;">Desenvolvimento Web</h4>
+                                  <p>Desenvolvimento de aplicações Web, Sites Institucionais, Blogs, E-commerce, Supervisórios Web para Automação industrial. </p>
+                                </div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                <div class="card-body">
+                                <div class="box box-services">
+                                    <div class="icon"><img src="assets/img/smartphone.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
+                                  <h4 class="heading" style="margin-top: 15px;">Desenvolvimento Mobile</h4>
+                                  <p>Desenvolvimento e manutenção de aplicativos mobile (Android)</p>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+            </div>
+          </div>
+        </div>
+    </div>
+
+   <!-------------------------------> 
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <div class="row justify-content-between align-items-center">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox" style="text-shadow: black 0.1em 0.1em 0.2em;">
+                  <div class="carousel-item active">
+                    <img class="d-block" src="assets/img/imagen-1.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="card" style="background-color: rgba(0, 0, 0, 0.432);">
+                      <div class="card-body">
+                        <h5>Página Home</h5>
+                        <p>Página Home Profissional, feita com HTML5, CSS3, Bootstrap e JavaScript</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="assets/img/imagem-2.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.432);">
+                            <div class="card-body">
+                        <h5>Página Perfil</h5>
+                        <p>Página Perfil Profissional, feita com HTML5, CSS3, Bootstrap e JavaScript</p>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="assets/img/imagem-3.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="card" style="background-color: rgba(0, 0, 0, 0.432);">
+                            <div class="card-body">
+                        <h5>Formulário de contato</h5>
+                        <p>Formulário de contato criando com HTML5, CSS3, Bootstrap e Javascript.</p>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block" src="assets/img/imagem-4.jpg" alt="Fifth slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <div class="card" style="background-color: rgba(0, 0, 0, 0.432);">
+                              <div class="card-body">
+                          <h5>Aplicativo Calculadora Freelancer</h5>
+                          <p>Aplicativo desenvolvido para android, utilizando Java e a IDE Android Studio.</br>
+                            Criado para ajudar a todo freela e autonomo a precificarem melhor o seu Valor/Hora.
+                          </p>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://github.com/deevjedi/App_Calculadora" target="_blank">
+                        <img class="d-block" src="assets/img/imagem-5.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="card" style="background-color: rgba(0, 0, 0, 0.432);">
+                                <div class="card-body">
+                            <h5>Aplicativo Calculadora</h5>
+                            <p>Aplicativo desenvolvido para android, utilizando Java e a IDE Android Studio</p>
+                            </div>
+                            </div>
+                        </div>
+                      </a>
+                      </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <i class="tim-icons icon-minimal-left" style="color:rgb(0, 0, 0);"></i>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <i class="tim-icons icon-minimal-right" style="color:rgb(0, 0, 0);"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="profile-title text-left">Projetos em Destaque</h1>
+            <h5 class="text-on-back"><i class="tim-icons icon-settings"></i></h5>
+            <p class="profile-description text-left">Aqui estão alguns projetos que eu pude participar, desde criação de layout, programação, desenvolvimento e finalização.</p>
+            <div class="btn-wrapper pt-3">
+              <a href="https://api.whatsapp.com/send?phone=5567999694191&text=Ol%C3%A1%20Matheus%20Benites%2C%20encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fbenits.github.io%2F.%20Vamos%20Conversar.%20" target="_blank">
+              <button href="javascript:void(0)" class="btn btn-simple btn-info">
+                  <i class="fa fa-whatsapp"></i>Entre em Contato
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-plain">
+              <div class="card-header">
+                <h1 class="profile-title text-left">Contato</h1>
+                <h5 class="text-on-back"><i class="tim-icons icon-single-02"></i></h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Seu Nome</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Seu E-mail</label>
+                        <input type="email" class="form-control" placeholder="exemplo@email.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Seu Telefone</label>
+                        <input type="text" class="form-control" name="telefone" id="telefone" maxlength="15" >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" class="form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Mensagem</label>
+                        <input type="text" class="form-control" placeholder="Escreva sua mensagem aqui!!">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-round float-right" rel="tooltip" data-original-title="Mal posso esperar pela sua mensagem" data-placement="right">Enviar Mensagem</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="tim-icons icon-square-pin"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">ENDEREÇO</h4>
+                  <br> Dourados, MS
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-primary">
+                <i class="tim-icons icon-mobile"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">CONTATO</h4>
+                <p> Matheus Benites
+                  <br><i class="fa fa-whatsapp" aria-hidden="true"></i> +55 67 9 9969-4191</br>
+                  	
+                </p>
+                <div>
+                  <p>
+                      <output id="hora"></output></br>
+                      <output id="data"></output>
+                      
+                    <script>
+                    function atualizaRelogio(){ 
+			                var momentoAtual = new Date();
+			
+			                var vhora = momentoAtual.getHours();
+			                var vminuto = momentoAtual.getMinutes();
+			                var vsegundo = momentoAtual.getSeconds();
+			
+			                var vdia = momentoAtual.getDate();
+			                var vmes = momentoAtual.getMonth() + 1;
+			                var vano = momentoAtual.getFullYear();
+			
+			                if (vdia < 10){ vdia = "0" + vdia;}
+		                	if (vmes < 10){ vmes = "0" + vmes;}
+			                if (vhora < 10){ vhora = "0" + vhora;}
+			                if (vminuto < 10){ vminuto = "0" + vminuto;}
+			                if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+ 
+			                  dataFormat = vdia + " / " + vmes + " / " + vano;
+			                  horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+ 
+			                  document.getElementById("data").innerHTML = dataFormat;
+			                  document.getElementById("hora").innerHTML = horaFormat;
+ 
+			                  setTimeout("atualizaRelogio()",1000);
+	                  	}
+	                </script>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1 class="title">MAB•</h1>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a href="https://www.devjedi.com.br/" class="nav-link" target="_blank">
+                    Blog
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title">Contatos</h3>
+            <div class="btn-wrapper profile">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5567999694191&text=Ol%C3%A1%20Matheus%20Benites%2C%20encontrei%20seu%20contato%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fbenits.github.io%2F.%20Vamos%20Conversar.%20" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Me Chame no Whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://github.com/benits" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Me Siga">
+                  <i class="fab fa-github"></i>
+                </a>
+              <a target="_blank" href="https://github.com/deevjedi" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Me Siga">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/mabfullstack" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Meu Facebook">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/benites-amorim/" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Me Siga">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!-- Chart JS -->
+  <script src="assets/js/plugins/chartjs.min.js"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="assets/js/plugins/moment.min.js"></script>
+  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="assets/demo/demo.js"></script>
+  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+
+	<!-- custom scrollbar plugin -->
+	<script src="assets\malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+  
+  <script>
+		(function($){
+			$(window).on("load",function(){
+				
+				var content=$("#content"),autoScrollTimer=8000,autoScrollTimerAdjust,autoScroll;
+				
+				content.mCustomScrollbar({
+					scrollButtons:{enable:true},
+					callbacks:{
+						whileScrolling:function(){
+							autoScrollTimerAdjust=autoScrollTimer*this.mcs.topPct/100;
+						},
+						onScroll:function(){ 
+							if($(this).data("mCS").trigger==="internal"){AutoScrollOff();}
+						}
+					}
+				});
+				
+				content.addClass("auto-scrolling-on auto-scrolling-to-bottom");
+				AutoScrollOn("bottom");
+				
+				$(".auto-scrolling-toggle").click(function(e){
+					e.preventDefault();
+					if(content.hasClass("auto-scrolling-on")){
+						AutoScrollOff();
+					}else{
+						if(content.hasClass("auto-scrolling-to-top")){
+							AutoScrollOn("top",autoScrollTimerAdjust);
+						}else{
+							AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+						}
+					}
+				});
+				
+				function AutoScrollOn(to,timer){
+					if(!timer){timer=autoScrollTimer;}
+					content.addClass("auto-scrolling-on").mCustomScrollbar("scrollTo",to,{scrollInertia:timer,scrollEasing:"easeInOutSmooth"});
+					autoScroll=setTimeout(function(){
+						if(content.hasClass("auto-scrolling-to-top")){
+							AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-top").addClass("auto-scrolling-to-bottom");
+						}else{
+							AutoScrollOn("top",autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-bottom").addClass("auto-scrolling-to-top");
+						}
+					},timer);
+				}
+				
+				function AutoScrollOff(){
+					clearTimeout(autoScroll);
+					content.removeClass("auto-scrolling-on").mCustomScrollbar("stop");
+				}
+				
+			});
+		})(jQuery);
+	</script>
+
+	<script>
+		(function($){
+			$(window).on("load",function(){
+				
+				var content=$("#content-1"),autoScrollTimer=8000,autoScrollTimerAdjust,autoScroll;
+				
+				content.mCustomScrollbar({
+					scrollButtons:{enable:true},
+					callbacks:{
+						whileScrolling:function(){
+							autoScrollTimerAdjust=autoScrollTimer*this.mcs.topPct/100;
+						},
+						onScroll:function(){ 
+							if($(this).data("mCS").trigger==="internal"){AutoScrollOff();}
+						}
+					}
+				});
+				
+				content.addClass("auto-scrolling-on auto-scrolling-to-bottom");
+				AutoScrollOn("bottom");
+				
+				$(".auto-scrolling-toggle").click(function(e){
+					e.preventDefault();
+					if(content.hasClass("auto-scrolling-on")){
+						AutoScrollOff();
+					}else{
+						if(content.hasClass("auto-scrolling-to-top")){
+							AutoScrollOn("top",autoScrollTimerAdjust);
+						}else{
+							AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+						}
+					}
+				});
+				
+				function AutoScrollOn(to,timer){
+					if(!timer){timer=autoScrollTimer;}
+					content.addClass("auto-scrolling-on").mCustomScrollbar("scrollTo",to,{scrollInertia:timer,scrollEasing:"easeInOutSmooth"});
+					autoScroll=setTimeout(function(){
+						if(content.hasClass("auto-scrolling-to-top")){
+							AutoScrollOn("bottom",autoScrollTimer-autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-top").addClass("auto-scrolling-to-bottom");
+						}else{
+							AutoScrollOn("top",autoScrollTimerAdjust);
+							content.removeClass("auto-scrolling-to-bottom").addClass("auto-scrolling-to-top");
+						}
+					},timer);
+				}
+				
+				function AutoScrollOff(){
+					clearTimeout(autoScroll);
+					content.removeClass("auto-scrolling-on").mCustomScrollbar("stop");
+				}
+				
+			});
+		})(jQuery);
+	</script>
+</body>
+
+</html>

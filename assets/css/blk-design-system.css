@@ -18550,7 +18550,7 @@ hr.line-deafult {
 }
 
 .color-swatch-header .pass-fail-item {
-  float: left;
+  
   display: inline-block;
   text-align: center;
   padding: 2px;
@@ -18609,7 +18609,7 @@ hr.line-deafult {
 
 .table-colors .swatch {
   display: inline-block;
-  float: left;
+  
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -18627,7 +18627,7 @@ hr.line-deafult {
   font-weight: 600;
   line-height: 10px;
   display: inline-block;
-  float: left;
+  
   margin: 5px 10px 0 0;
   padding: 2px 4px;
   letter-spacing: .05em;

@@ -31,11 +31,10 @@
   
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
-  <link href="/assets/vendor/nucleo/css/nucleo-icons.css" rel="stylesheet">
   <!-- custom scrollbar stylesheet -->
   <link rel="stylesheet" href="assets\malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 
 <body class="profile-page">
@@ -430,8 +429,8 @@
     <div class="section">
       
         <div class="container">
-            <div class="col-lg-6 col-md-6" style="margin-left:0px;">
-                <h1 class="profile-title text-left">O QUE EU FAÇO</h1>
+            <div class="col-lg-6 col-md-6" >
+                <h1 class="profile-title text-left" style="margin-top:28px; margin-left: 45px; font-family: inherit;">O QUE EU FAÇO</h1>
                 <h5 class="text-on-back"><i class="tim-icons icon-minimal-left"></i><a>/</a><i class="tim-icons icon-minimal-right"></i></h5>
               </div>
           <div class="row justify-content-between">
@@ -440,7 +439,7 @@
                           <div class="col-md-12">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                    <div class="card" style="max-height:350px;background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
                                     <div class="card-body">
                                     <div class="box box-services">
                                       <div class="icon"><img src="assets/img/data.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
@@ -451,7 +450,7 @@
                                 </div>
                                   </div>
                               <div class="col-sm-4">
-                                  <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                  <div class="card" style="max-height:350px; background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
                                       <div class="card-body">
                                 <div class="box box-services">
                                     <div class="icon"><img src="assets/img/code-web.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
@@ -462,7 +461,7 @@
                                 </div>
                               </div>
                               <div class="col-sm-4">
-                                <div class="card" style="background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
+                                <div class="card" style="max-height:350px;background-color: rgba(255, 255, 255, 0.019);border: 2px solid #8965e0;">
                                 <div class="card-body">
                                 <div class="box box-services">
                                     <div class="icon"><img src="assets/img/smartphone.png" style="max-width:120px; max-height:120px; width: auto; height: auto; color: white;"/></div>
@@ -594,18 +593,18 @@
                 <h5 class="text-on-back"><i class="tim-icons icon-single-02"></i></h5>
               </div>
               <div class="card-body">
-                <form>
+                <form action = "https://formspree.io/benites.amorim@gmail.com" method = "POST" >
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Seu Nome</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name = "name" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Seu E-mail</label>
-                        <input type="email" class="form-control" placeholder="exemplo@email.com">
+                        <input type="email" name = "email" class="form-control" placeholder="exemplo@email.com">
                       </div>
                     </div>
                   </div>
@@ -619,7 +618,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Empresa</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" name = "empresa" class="form-control" value="">
                       </div>
                     </div>
                   </div>
@@ -627,7 +626,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Mensagem</label>
-                        <input type="text" class="form-control" placeholder="Escreva sua mensagem aqui!!">
+                        <input type="text" name = "mensagem" class="form-control" placeholder="Escreva sua mensagem aqui!!">
                       </div>
                     </div>
                   </div>
@@ -643,7 +642,7 @@
               </div>
               <div class="description">
                 <h4 class="info-title">ENDEREÇO</h4>
-                  <br> Dourados, MS
+                   Dourados, MS
                 </p>
               </div>
             </div>
